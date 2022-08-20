@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img v-y src="./assets/logo.png">
+    <img v-y:click="test" src="./assets/logo.png">
     <HelloWorld/>
   </div>
 </template>
@@ -12,6 +12,11 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  methods:{
+    test(){
+      console.log("yuyyy")
+    }
   }
 }
 </script>
